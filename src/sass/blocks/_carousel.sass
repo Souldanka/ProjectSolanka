@@ -4,7 +4,7 @@
         position: relative
         width: 750px
         margin: 0 auto
-    .slick-prev, .slick-next
+    .prev, .next
         position: absolute
         top: 50%
         transform: translateY(-50%)
@@ -14,10 +14,23 @@
         img
             width: 31px
             height: 50px
-    .slick-next
+    .next
         right: -66px
         left: auto
-    .slick-dots
+    .tns-item
+        img
+            display: block
+            margin: 0 auto
+    .tns-nav
         display: flex
         justify-content: center
+        button
+            border: none
+        .tns-nav-active
+            background-color: $main-color
 
+@media screen and (max-width: 992px) 
+  .prev, .next
+      display: none
+    
+ 
